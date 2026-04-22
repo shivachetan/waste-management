@@ -1,0 +1,1 @@
+class o{constructor(){this.polls={}}startPolling(l,s,t=1e4){this.polls[l]&&clearInterval(this.polls[l]),s(),this.polls[l]=setInterval(s,t)}stopPolling(l){this.polls[l]&&(clearInterval(this.polls[l]),delete this.polls[l])}stopAll(){Object.keys(this.polls).forEach(l=>{clearInterval(this.polls[l])}),this.polls={}}}const e=new o;export{e as p};
